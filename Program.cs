@@ -36,3 +36,6 @@ string restored = Encoding.UTF8.GetString(bytes);
 Console.WriteLine($"Исходная строка: {text3}");
 Console.WriteLine($"Восстановленная: {restored}");
 
+byte[] data = { 0x41, 0x42, 0x43 };
+Console.WriteLine($"Байты {BitConverter.ToString(data)}");
+Console.WriteLine($"Как текст UTF-8 {Encoding.UTF8.GetString(data)}");
